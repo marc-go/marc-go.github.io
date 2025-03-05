@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marc Göring</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    </head>
+    <body>
+        <div class="page-content">
+            <div class="menue">
+                <div class="menue-header">
+                    <a id="openMenue" onclick="openMenue()">Menü</a>
+                    <a id="closeMenue" onclick="closeMenue()">Schließen</a>
+                </div>
+                <div class="menue-content" id="menue">
+                    <ul>
+                        <li><a id="link" href="/">Home</a></li>
+                        <li><a id="link" href="programms">Programme</a></li>
+                        <li><span id="selected">Projekte</span></li>
+						<li><a id="link" href="https://gaestebuch.marc-goering.de">Gästebuch</a></li><br><br>
+                        <p id="copyright">Copyright 2025 Marc Göring</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="content" id="content">
+                <h1>Projekte</h1>
+				<p>Hier findest du Projekte, an denen ich arbeite.</p>
+				<h3>Gästebuch</h3>
+				<p>Ein Gästebuch, das man sich auf seinem Server installieren kann.</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

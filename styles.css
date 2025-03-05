@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'JetBrains Mono', monospace;
+}
+            
+h1 {
+    font-size: 50pt;
+}
+            
+h3 {
+    font-size: 20pt;
+}
+            
+.menue {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20pt;
+}
+            
+.content {
+    font-size: 13pt;
+}
+            
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+            
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+            
+.menue-content {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 99999;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0;
+    display: none;
+    margin-top: 30px;
+}
+            
+.menue-content.open {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+            
+.menue-content.close {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+            
+#link {
+    color: #000000;
+    text-decoration: none;
+}
+            
+#link:hover {
+    text-decoration: underline;
+}
+            
+#selected {
+    text-decoration: underline;
+}
+            
+#closeMenue {
+    display: none;
+}
+            
+#copyright {
+    font-size: 10pt;
+}
+            
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+                
+    100% {
+        opacity: 1;
+    }
+}
+            
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+                
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+                
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+	    background-color: #000000;
+	    color: #ffffff;
+    }
+
+    .menue {
+	    background-color: #ffffff;
+	    color: #000000;
+    }
+
+    a {
+	    color: #000000;
+    }
+
+    a:hover {
+	    text-decoration-color: #000000;
+    }
+
+    .menue-content {
+	    background-color: #000000;
+	    color: #ffffff;
+    }
+
+    #link {
+	    color: #ffffff;
+    }
+}
