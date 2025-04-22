@@ -59,10 +59,29 @@ html, body {
 }
 
 #about {
-    padding: 10px;
+    position: relative;
+    display: flex;
 }
 
 #head-text {
     font-size: 50pt;
+}
+
+#text {
+    font-size: 20pt;
+}
+
+.center-text-left {
+    position: absolute;
+    top: 50%;
+    display: block;
+}
+
+.text {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 50%;
+    height: auto;
 }
