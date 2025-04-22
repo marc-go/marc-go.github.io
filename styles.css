@@ -1,0 +1,68 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.page-white {
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden;
+    transform: translateY();
+}
+
+.page-black {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+}
+
+#site-header {
+    text-align: center;
+    position: relative;
+}
+
+#name {
+    font-size: 90pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 100pt;
+}
+
+#arrow_down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 50px;
+    }
+
+    50% {
+        bottom: 60px;
+    }
+
+    100% {
+        bottom: 50px;
+    }
+}
+
+#about {
+    padding: 10px;
+}
+
+#head-text {
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
