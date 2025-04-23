@@ -6,8 +6,12 @@
     <title>Marc Goering</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="load.js"></script>
 </head>
 <body>
+    <div class="load" id="loader">
+        <div id="load"></div>
+    </div>
     <div class="page-content">
         <div class="page-black" id="site-header">
             <span id="name">Marc<br>Goering</span><br>
@@ -20,8 +24,14 @@
                 <span class="text" id="head-text">About me</span><br><br>
                 <span class="text" id="text">I really enjoy programming website backends, but I'm not very good at CSS. My favorite language is PHP. I'm also interested in photography.</span>
             </div>
-            <div class="center-img-right">
-                <img src="/img/vscode.png">
+            <img src="/img/code.png" class="center-img-right">
+        </div>
+        <div class="page-black" id="projects">
+            <img src="/img/projects.png" class="center-img-left">
+            <div class="center-text-right">
+                <span class="text" id="head-text">My Projects</span><br><br>
+                <span class="text" id="big-text">Guestbook</span><br>
+                <span class="text" id="text">A good Guestbook <br> <a href="https://github.com/marc-go/guestbook">GitHub</a></span>
             </div>
         </div>
     </div>
