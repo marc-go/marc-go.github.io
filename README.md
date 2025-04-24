@@ -1,7 +1,3 @@
-# All my Websites
+# My Website
 
-# V 1.0
-The last site
-
-# V 1.1
-The current site
+Here you can find my website
