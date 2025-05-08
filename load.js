@@ -1,3 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("loader").style.display = "none";
+    setTimeOut(1000, function() {
+        document.getElementById("loader").style.display = "none";
+    }
 });
